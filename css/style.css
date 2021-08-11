@@ -88,9 +88,10 @@ p {
   border-radius: 50%;
   overflow: hidden;
   text-indent: -9999px;
-  /* Hides inner circles outside base circle at safari */
-  -webkit-mask-image: url(data:image/png;
-  base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  /*  Hides inner circles outside base circle at safari 
+  -webkit-mask-image: url(data:image/png);
+  base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); 
+*/
 }
 .preloader:not(:required):before,
 .preloader:not(:required):after {
@@ -178,7 +179,6 @@ p {
   background-color: #41b0bf;
   height: 70px;
   position: fixed;
-  opacity: 0.9;
 
   top: 0px;
   z-index: 999;
@@ -186,12 +186,14 @@ p {
   border-left:20px solid white; */
   transition: all 0.2s ease-in-out;
 }
-header.nav-up .wrapper {
+#navbar {
+  top: 0;
+  transition: top 0.3s;
+}
+
+/* header.nav-up .wrapper {
   top: -80px;
-}
-header.nav-down.reachedTop .wrapper {
-  /*  top: 20px; */
-}
+} */
 a.logo {
   text-transform: uppercase;
   margin-top: 25px;
@@ -222,7 +224,7 @@ ul.menu li a:hover {
   border-bottom: 1px solid #fff;
   padding-bottom: 6px;
 }
-@keyframes slideleft {
+/* @keyframes slideleft {
   from {
     background-position: 0%;
   }
@@ -237,28 +239,34 @@ ul.menu li a:hover {
   to {
     background-position: 90000%;
   }
-}
+} */
 @keyframes animatedBackground {
   from {
     background-position: 0 0;
   }
   to {
-    background-position: 445% 0;
+    background-position: -900% 0;
   }
 }
 section.intro {
   background-image: url(../img/clouds.png);
   background-position: 0px 0px;
 
-  background-repeat: repeat-x top;
-  animation: animatedBackground 4s linear infinite;
-  /*animation:slideleft 20000s infinite linear;-webkit-animation:slideleft 20000s infinite linear;width:100%;*/
-  background-color: #41b0bf;
-  padding-bottom: 70px;
+  /*  background-repeat: repeat-x; */
 
+  animation-name: animatedBackground;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* 
+  animation: animatedBackground 2s linear infinite; */
+  /*animation:slideleft 20000s infinite linear;-webkit-animation:slideleft 20000s infinite linear;width:100%;*/
+  background-color: rgb(21, 157, 215);
+  padding-bottom: 70px;
+  background-size: contain;
   /*   border-right: 20px solid #fff;
   border-left: 20px solid #fff; */
-  border-top: 20px solid #41b0bf;
+  border-top: 20px solid rgb(21, 157, 215);
   padding-top: 80px;
 }
 section.intro h1 {
