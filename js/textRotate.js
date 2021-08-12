@@ -1,3 +1,4 @@
+/* Coffe with me form submission */
 var theForm = document.getElementById("theForm");
 
 new stepsForm(theForm, {
@@ -27,8 +28,8 @@ new stepsForm(theForm, {
   },
 });
 // ###########################################################
-
-$(document).ready(function () {
+/* number animation */
+/* $(document).ready(function () {
   numberAnimations();
   function numberAnimations() {
     $(window).scroll(function () {
@@ -44,13 +45,33 @@ $(document).ready(function () {
       }
     });
   } //end numberAnimations
-}); //end document ready
+}); //end document ready */
+
+/* downloadCV gif */
 function changeImage() {
   $(".downloadCV").html("<p>Download my Resume</p><img src='img/dwnld.gif'>");
-  //window.open("https://docs.google.com/uc?authuser=0&id=0BzUOptk4o8-NY0xOVnBKOTBDdm8&export=download","_blank");
+  setTimeout(() => {
+    window.open("https://drive.google.com/file/d/1-KcS_nC5GVQxyV_Lwu0n28YerKxKtYhr/view?usp=sharing", "_blank");
+  }, 2000);
+
   $(".resume").addClass("downloaded");
   $(".downloaded").removeClass("resume");
 }
+
+/* smooth scroll */
+/* add class = smooth to a tags for smooth scroll */
+function scrollToElement(selector) {
+  $("html, body").animate(
+    {
+      scrollTop: $(selector).offset().top,
+    },
+    1500
+  );
+}
+
+$(document).on("click", "a.smooth", function () {
+  scrollToElement($(this).attr("href"));
+});
 // ###################################################################
 
 var skills = [

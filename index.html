@@ -49,8 +49,10 @@
           <div class="small-12 large-12 columns alignCenter">
             <ul class="menu">
               <li><a href="#me">about</a></li>
+              <li><a href="#cv">resume</a></li>
+              <li><a href="#projects">projects</a></li>
               <li><a href="#myskills">skills</a></li>
-              <li><a href="#projects">youtube</a></li>
+              <li><a href="#artworks">artworks</a></li>
               <li><a href="#coffeewithme">coffee with me</a></li>
             </ul>
           </div>
@@ -86,9 +88,9 @@
         <div class="large-12 medium-12 columns">
           <div class="large-4 medium-4 columns">
             <img class="logo" src="img/jatin.jpg" />
-            <div class="medium-12 columns">
+            <div class="medium-12 alignCenter columns">
               <ul class="tools">
-                <li>
+                <li style="margin-left: 0">
                   <a href="https://www.linkedin.com/in/jatin-saini-60a0a21a0/" target="_blank">
                     <img src="img/social_icons/lin.png" alt="lin" width="40" />
                   </a>
@@ -110,20 +112,33 @@
           <div class="large-8 medium-8 columns">
             <h1>About me.</h1>
             <p>
-              Hi! I am Jatin Saini, a 20 year old student currently doing my Dual Degree in Mechanical Engineering from IIT Kharagpur. I live in
-              <a href="https://goo.gl/maps/CywF4Um72rmtcWtk8" target="_blank">Kota, Rajasthan, India</a>.
+              👋🏻Hi! I am Jatin Saini, a 20 year old student from <a href="https://goo.gl/maps/CywF4Um72rmtcWtk8" target="_blank">Kota, Rajasthan, India</a> 🏠. I'm
+              currently pursuing my Dual Degree (B.Tech + M.Tech) in Mechanical Engineering from <a href="http://www.iitkgp.ac.in/" target="_blank">IIT Kharagpur</a> 🎓.
+              <br />
+              I love programming and my interests lie in Web Development, Deep Learning and Robotics.
+              <br />
+              I am passionate for coding 👨🏻‍💻, love playing guitar 🎸 and singing 🎤 along, like <a class="smooth" href="#artworks">sketching</a> 🎨, interested in latest
+              technology trends, AI 🤖and gaming 🎮. I love watching animated movies 🎬.
             </p>
             <p>
-              Have a look at my <a href="#myskills">skills</a> and <a href="#">projects</a> & connect with me on
+              Have a look at my <a class="smooth" href="#myskills">skills</a> and <a class="smooth" href="#projects">projects</a> & connect with me on
               <a href="https://www.linkedin.com/in/jatin-saini-60a0a21a0/" target="_blank">LinkedIn</a>. I am always excited to do new innovative projects with like
-              minded people, lets discuss over a <a href="#coffeewithme">coffee</a>.
+              minded people, lets discuss over a <a class="smooth" href="#coffeewithme">coffee</a>.
             </p>
           </div>
         </div>
       </div>
     </section>
     <hr class="num" />
-    <section class="numbers-wrapper">
+    <section class="cv" id="cv">
+      <div class="row alignCenter">
+        <div class="downloadCV">
+          <p>Download my Resume</p>
+          <img class="resume" onclick="changeImage()" src="img/dwnld.png" />
+        </div>
+      </div>
+    </section>
+    <!--   <section class="numbers-wrapper">
       <section class="numbers-inner-wrapper">
         <div class="numbers">
           <h4 id="coded-lines">160 000</h4>
@@ -142,59 +157,61 @@
           <span>projects completed</span>
         </div>
       </section>
-    </section>
+    </section> -->
     <section class="projects" id="projects">
       <div class="row alignCenter">
-        <h1>My Youtube Videos</h1>
+        <h1>Projects.</h1>
         <div id="cbp-fwslider" class="cbp-fwslider">
           <ul>
             <li>
-              <iframe
-                width="400"
-                height="225"
-                src="https://www.youtube.com/embed/pN6jk0uUrD8"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="name">Namaste JavaScript Web Series</h2>
-              <p class="desc">In depth JavaScript video tutorials!</p>
-              <a class="btn project" href="https://youtube.com/akshaymarch7">Watch Video</a>
+              <img class="project_page" src="img/projects/detektor.jpg" />
+              <h2 class="name">The Detektor</h2>
+              <p class="desc">
+                I with other two teammates made a website during the 9th Inter IIT Technology Meet, hosted by IIT Guwahati in March 2021 for the BOSCH's TRAFFIC SIGN
+                RECOGNITION event in which we secured Bronze medal.
+              </p>
+              <a class="btn project" href="https://drive.google.com/drive/folders/1aLQNPEqkOekUCQWfSmjpqFzpGFc1WbMs" target="_blank" style="margin-right: 3px"
+                >Drive Link (UI)</a
+              >
+              <a class="btn project" href="https://github.com/yash12khandelwal/traffic_sign_interiit/tree/main" target="_blank" style="margin-left: 3px">GitHub</a>
             </li>
             <li>
-              <iframe
-                width="400"
-                height="225"
-                src="https://www.youtube.com/embed/ozh5WMot6io"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="name">How to become a Web Developer</h2>
-              <p class="desc">Covering my personal tips and tricks!</p>
-              <a class="btn project" href="https://youtube.com/akshaymarch7">Watch Video</a>
+              <img class="project_page" src="img/projects/wiper.gif" />
+              <h2 class="name">Wiper Mechanism Simulator</h2>
+              <p class="desc">A 4-bar wiper mechanism simulator made using javascript with motion analysis and a UI for user to change parameters.</p>
+              <a class="btn project" href="https://jatin-47.github.io/Wiper-Mechanism/index.html" target="_blank" style="margin-right: 3px">Website</a>
+              <a class="btn project" href="https://github.com/jatin-47/Wiper-Mechanism" target="_blank" style="margin-left: 3px">GitHub</a>
             </li>
             <li>
-              <iframe
-                width="400"
-                height="225"
-                src="https://www.youtube.com/embed/ExPusSE0d30"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <h2 class="name">My Journey</h2>
-              <p class="desc">How I fell in love with Javascript and ended up being a Web Developer!</p>
-              <a class="btn project" href="https://youtube.com/akshaymarch7">Watch Video</a>
+              <img class="project_page" src="img/projects/tictactoe.png" />
+              <h2 class="name">Tic-Tac-Toe</h2>
+              <p class="desc">
+                Made a Tic-Tac-Toe game AI using Minimax algorithm with alpha-beta pruning optimization and fast win heuristics. The whole UI is made from scratch along
+                with cool css animations.
+              </p>
+              <a class="btn project" href="https://jatin-47.github.io/Tic-Tac-Toe/" target="_blank" style="margin-right: 3px">Website</a>
+              <a class="btn project" href="https://github.com/jatin-47/Tic-Tac-Toe" target="_blank" style="margin-left: 3px">GitHub</a>
             </li>
             <li>
-              <br />
-              <br />
-              <br />
-              <br />
-              <h2 class="name">There are many more !</h2>
-              <p class="desc">Check out all the videos on my Youtube Channel</p>
-              <a class="btn project" href="https://youtube.com/akshaymarch7" target="_blank">Visit now</a>
+              <img class="project_page" src="img/projects/bfs.gif" />
+              <h2 class="name">Breadth First Search - Visual</h2>
+              <p class="desc">Animation of BFS algorithm for finding shortest path in action. (using WinBGI graphics library in C++ language)</p>
+              <a class="btn project" href="https://github.com/jatin-47/BFS-Visual" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <img class="project_page" src="img/projects/betbid.png" />
+              <h2 class="name">BetBid</h2>
+              <p class="desc">
+                An e-auction site similar to ebay made using Django as Back-end. Front-end designed using HTML & CSS without using Bootstrap or any other framework.
+                SQLite for databases using Django Models as ORM.
+              </p>
+              <a class="btn project" href="https://www.youtube.com/watch?v=kyX4GmZtR1Y" target="_blank" style="margin-right: 3px">Video</a>
+              <a class="btn project" href="https://github.com/jatin-47/Commerce-project2" target="_blank" style="margin-left: 3px">GitHub</a>
+            </li>
+            <li>
+              <h2 class="name">Check out my Resume!</h2>
+              <p class="desc">For more detailed information on all the projects</p>
+              <a class="btn project smooth" href="#cv">Resume</a>
             </li>
           </ul>
         </div>
@@ -204,15 +221,11 @@
       <div class="row alignCenter">
         <h1>Skills.</h1>
         <div class="skills"></div>
-        <div class="downloadCV">
-          <p>Download my Resume</p>
-          <img class="resume" onclick="changeImage()" src="img/dwnld.png" />
-        </div>
       </div>
     </section>
 
     <!-- artwork -->
-    <section class="quotes" id="quotes">
+    <section class="quotes" id="artworks">
       <div class="row alignCenter">
         <h1>ArtWorks.</h1>
         <p></p>
@@ -247,9 +260,11 @@
             </li>
             <li>
               <img class="artwork" src="img/artworks/Boat.jpeg" alt="ocean" />
+              <h2>"Acrylic Painting 1"</h2>
             </li>
             <li>
               <img class="artwork" src="img/artworks/Beach.jpeg" alt="beach" />
+              <h2>"Acrylic Painting 2"</h2>
             </li>
           </ul>
         </div>
@@ -305,7 +320,7 @@
         <div class="large-4 columns pad10"></div>
         <div class="large-4 columns alignCenter pad10">
           <ul class="tools">
-            <li>
+            <li style="margin-left: 0px">
               <a href="https://www.linkedin.com/in/jatin-saini-60a0a21a0/" target="_blank"><img src="img/social_icons/lin.png" alt="lin" width="40" /></a>
             </li>
             <li>

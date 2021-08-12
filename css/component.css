@@ -3,14 +3,16 @@
   margin: 0 0 10px;
   overflow: hidden;
   padding: 0px 0 45px;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
 }
 
 .cbp-fwslider ul {
   margin: 0;
   padding: 0;
-  white-space: nowrap;
+  white-space: normal;
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 .cbp-fwslider ul li {
@@ -511,16 +513,24 @@ input[type="text"]::-ms-clear {
     font-size: 25px;
   }
   section.projects p.desc {
-    font-size: 10px;
+    font-size: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
   .cbp-fwslider {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   section.myskills h1 {
     font-size: 40px;
   }
   section.myskills p {
     margin-top: 0px;
+  }
+  section.cv h1 {
+    font-size: 40px;
+  }
+  section.cv p {
+    margin-top: 20px;
   }
   section.quotes {
     border: 0px;
@@ -532,6 +542,11 @@ input[type="text"]::-ms-clear {
   }
   .artwork {
     max-width: 85% !important;
+    height: auto !important;
+  }
+  .project_page {
+    max-width: 85% !important;
+    max-height: 350px !important;
     height: auto !important;
   }
 

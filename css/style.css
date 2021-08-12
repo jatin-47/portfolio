@@ -286,9 +286,9 @@ a.btn {
   border: 1px solid #fff;
   text-transform: uppercase;
   color: #fff;
-  padding: 15px 25px;
+  padding: 10px 20px;
   border-radius: 30px;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 1px;
   margin-top: 14px;
   position: relative;
@@ -384,6 +384,7 @@ section.projects h1 {
   font-family: "ProximaNovaT";
   font-size: 50px;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 section.projects p {
   color: #fff;
@@ -434,7 +435,7 @@ section.quotes {
   /*   border-left: 20px solid white;
   border-right: 20px solid white; */
   border-bottom: 20px solid white;
-  border-top: 20px solid white;
+  /*  border-top: 20px solid white; */
 }
 section.quotes h1 {
   color: #fff;
@@ -464,6 +465,10 @@ section.quotes p {
   border-style: none;
   border: 0px solid !important;
 }
+.project_page {
+  height: 400px !important;
+  width: auto !important;
+}
 section.coffeewithme {
   /*background:#ffc548;*/
   background: #fff;
@@ -486,13 +491,37 @@ section.coffeewithme p {
   margin-bottom: 40px;
   font-size: 21px;
 }
+section.cv {
+  background: #fff;
+  /*   border-left: 20px solid white;
+  border-right: 20px solid white; */
+  border-bottom: 20px solid white;
+}
+section.cv h1 {
+  color: #3a3a3a;
+  font-family: "ProximaNovaT";
+  font-size: 55px;
+  margin-top: 40px;
+}
+section.cv p {
+  text-align: center;
+  color: #838383;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: -30px;
+  font-size: 25px;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  left: 0;
+}
 section.myskills {
   /*background:#ffc548;*/
   background: #fff;
   /*   border-left: 20px solid white;
   border-right: 20px solid white; */
-  /*   border-bottom: 20px solid white;
-  border-top: 20px solid white; */
+  border-bottom: 20px solid white;
+  /*border-top: 20px solid white; */
 }
 section.myskills h1 {
   color: #3a3a3a;
@@ -515,7 +544,9 @@ section.myskills p {
 .downloadCV {
   min-height: 172px;
   padding-bottom: 20px;
-  padding-top: 20px;
+  /*   padding-top: 20px; */
+  position: relative;
+  z-index: 10;
   cursor: pointer;
 }
 section.projects {
@@ -524,6 +555,7 @@ section.projects {
 }
 section.projects h2.name {
   font-size: 30px;
+  margin-top: 15px;
   text-align: center;
   font-family: "ProximaNovaT";
   color: #fff;
@@ -620,12 +652,12 @@ section.sayhello p.made {
 }
 hr.num {
   margin-top: 25px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 hr {
   width: 1110px;
   margin: 90px auto 0px auto;
-  border: 1px solid #eff5f7;
+  border: 1px solid #e5e8e9;
 }
 .project_img {
   width: 50% !important;
