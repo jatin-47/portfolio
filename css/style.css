@@ -469,6 +469,11 @@ section.quotes p {
   height: 400px !important;
   width: auto !important;
 }
+.icons {
+  width: 100px;
+
+  margin: 5px;
+}
 section.coffeewithme {
   /*background:#ffc548;*/
   background: #fff;
@@ -530,16 +535,10 @@ section.myskills h1 {
   margin-top: 40px;
 }
 section.myskills p {
-  text-align: center;
-  color: #838383;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: -30px;
-  font-size: 25px;
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  left: 0;
+  color: #3a3a3a;
+  font-weight: 100;
+  font-family: "ProximaNovaT";
+  font-size: 35px;
 }
 .downloadCV {
   min-height: 172px;
@@ -804,9 +803,23 @@ hr {
 .cd-headline.clip b.is-visible {
   opacity: 1;
 }
-.skills {
+.skills ul {
+  list-style-type: none;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+.skills li {
+  margin-bottom: 15px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 .pentagon {
   width: 300px;

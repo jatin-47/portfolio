@@ -549,6 +549,9 @@ input[type="text"]::-ms-clear {
     max-height: 350px !important;
     height: auto !important;
   }
+  .icons {
+    width: 75px;
+  }
 
   section.quotes h2 {
     font-size: 17px;

@@ -73,7 +73,7 @@ $(document).on("click", "a.smooth", function () {
   scrollToElement($(this).attr("href"));
 });
 // ###################################################################
-
+/* 
 var skills = [
   { header: "INTERESTS", captions: ["Digital Marketing", "Web", "PWAs", "Design", "SEO"], values: [0.8, 0.9, 0.7, 0.8, 0.9] },
   { header: "CORE", captions: ["CSS", "AJAX", "HTML", "jQuery", "JS"], values: [0.9, 0.7, 0.9, 0.7, 0.8] },
@@ -109,13 +109,13 @@ $(".pentagon").each(function (index) {
   ctx.font = "15px Monospace";
   ctx.textAlign = "center";
 
-  /*** LABEL ***/
+  // LABEL 
   color = "hsl(" + hue[pentagonIndex] + ", 100%, 30%)";
   ctx.fillStyle = color;
   ctx.fillText(skills[pentagonIndex].header, width / 2, 15);
   ctx.font = "13px Monospace";
 
-  /*** PENTAGON BACKGROUND ***/
+  // PENTAGON BACKGROUND
   for (var i = 0; i < sides; i++) {
     // For each side, draw two segments: the side, and the radius
     ctx.beginPath();
@@ -145,7 +145,8 @@ $(".pentagon").each(function (index) {
   var value = skills[pentagonIndex].values[valueIndex];
   xy = getXY(i, value * 0.3);
   ctx.moveTo(xy.x, xy.y);
-  /*** SKILL GRAPH ***/
+  
+  // SKILL GRAPH 
   for (var i = 0; i < sides; i++) {
     xy = getXY(i, value * 0.3);
     ctx.lineTo(xy.x, xy.y);
@@ -158,7 +159,7 @@ $(".pentagon").each(function (index) {
   valueIndex = 0;
   pentagonIndex++;
 });
-
+ */
 jQuery(document).ready(function ($) {
   //set animation timing
   var animationDelay = 2500,
