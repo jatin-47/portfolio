@@ -28,28 +28,9 @@ new stepsForm(theForm, {
   },
 });
 // ###########################################################
-/* number animation */
-/* $(document).ready(function () {
-  numberAnimations();
-  function numberAnimations() {
-    $(window).scroll(function () {
-      if ($(".numbers-wrapper").is(":visible") == true) {
-        var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(" ");
-
-        $("#coded-lines").animateNumber({ number: 160000, numberStep: comma_separator_number_step }, 2000);
-        $("#rendered-pixels").animateNumber({ number: 301783509, numberStep: comma_separator_number_step }, 2000);
-        $("#coffee-cups").animateNumber({ number: 1512, numberStep: comma_separator_number_step }, 2000);
-        $("#eaten-nutela").animateNumber({ number: 26, numberStep: comma_separator_number_step }, 2000);
-
-        $(window).off("scroll");
-      }
-    });
-  } //end numberAnimations
-}); //end document ready */
-
 /* downloadCV gif */
 function changeImage() {
-  $(".downloadCV").html("<p>Download my Resume</p><img src='img/dwnld.gif'>");
+  $(".downloadCV").html("<p>Download my Resume</p><img onclick='changeImage()' src='img/dwnld.gif'>");
   setTimeout(() => {
     window.open("https://drive.google.com/file/d/1-KcS_nC5GVQxyV_Lwu0n28YerKxKtYhr/view?usp=sharing", "_blank");
   }, 2000);
@@ -72,94 +53,13 @@ function scrollToElement(selector) {
 $(document).on("click", "a.smooth", function () {
   scrollToElement($(this).attr("href"));
 });
+
+/* hamburger */
+function toggleSidenav() {
+  document.body.classList.toggle("sidenav-active");
+  document.body.classList.toggle("noscroll");
+}
 // ###################################################################
-/* 
-var skills = [
-  { header: "INTERESTS", captions: ["Digital Marketing", "Web", "PWAs", "Design", "SEO"], values: [0.8, 0.9, 0.7, 0.8, 0.9] },
-  { header: "CORE", captions: ["CSS", "AJAX", "HTML", "jQuery", "JS"], values: [0.9, 0.7, 0.9, 0.7, 0.8] },
-  { header: "Mordern Web", captions: ["Vue", "FusionJs", "React", "Angular", "Weex"], values: [0.8, 0.85, 0.9, 0.75, 0.6] },
-];
-
-var pentagonIndex = 0;
-var valueIndex = 0;
-var width = 0;
-var height = 0;
-var radOffset = Math.PI / 2;
-var sides = 5; // Number of sides in the polygon
-var theta = (2 * Math.PI) / sides; // radians per section
-
-function getXY(i, radius) {
-  return { x: Math.cos(radOffset + theta * i) * radius * width + width / 2, y: Math.sin(radOffset + theta * i) * radius * height + height / 2 };
-}
-
-var hue = [];
-var hueOffset = 25;
-
-for (var s in skills) {
-  $(".skills").append('<div class="pentagon" id="interests"><div class="header"></div><canvas class="pentCanvas"/></div>');
-  hue[s] = (hueOffset + (s * 255) / skills.length) % 255;
-}
-
-$(".pentagon").each(function (index) {
-  width = $(this).width();
-  height = $(this).height();
-  var ctx = $(this).find("canvas")[0].getContext("2d");
-  ctx.canvas.width = width;
-  ctx.canvas.height = height;
-  ctx.font = "15px Monospace";
-  ctx.textAlign = "center";
-
-  // LABEL 
-  color = "hsl(" + hue[pentagonIndex] + ", 100%, 30%)";
-  ctx.fillStyle = color;
-  ctx.fillText(skills[pentagonIndex].header, width / 2, 15);
-  ctx.font = "13px Monospace";
-
-  // PENTAGON BACKGROUND
-  for (var i = 0; i < sides; i++) {
-    // For each side, draw two segments: the side, and the radius
-    ctx.beginPath();
-    xy = getXY(i, 0.3);
-    colorJitter = 25 + theta * i * 2;
-    color = "hsl(" + hue[pentagonIndex] + ",100%," + colorJitter + "%)";
-    ctx.fillStyle = color;
-    ctx.strokeStyle = color;
-    ctx.moveTo(0.5 * width, 0.5 * height); //center
-    ctx.lineTo(xy.x, xy.y);
-    xy = getXY(i + 1, 0.3);
-    ctx.lineTo(xy.x, xy.y);
-    xy = getXY(i, 0.37);
-    console.log();
-    ctx.fillText(skills[pentagonIndex].captions[valueIndex], xy.x, xy.y + 5);
-    valueIndex++;
-    ctx.closePath();
-    ctx.fill();
-    ctx.stroke();
-  }
-
-  valueIndex = 0;
-  ctx.beginPath();
-  ctx.fillStyle = "rgba(0, 0, 0, 0.2)";
-  ctx.strokeStyle = "rgba(0, 0, 0, 0.3)";
-  ctx.lineWidth = 5;
-  var value = skills[pentagonIndex].values[valueIndex];
-  xy = getXY(i, value * 0.3);
-  ctx.moveTo(xy.x, xy.y);
-  
-  // SKILL GRAPH 
-  for (var i = 0; i < sides; i++) {
-    xy = getXY(i, value * 0.3);
-    ctx.lineTo(xy.x, xy.y);
-    valueIndex++;
-    value = skills[pentagonIndex].values[valueIndex];
-  }
-  ctx.closePath();
-  ctx.stroke();
-  ctx.fill();
-  valueIndex = 0;
-  pentagonIndex++;
-});
- */
 jQuery(document).ready(function ($) {
   //set animation timing
   var animationDelay = 2500,

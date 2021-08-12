@@ -440,13 +440,16 @@ input[type="text"]::-ms-clear {
 /*Responsive CSS*/
 
 @media only screen and (max-width: 64em) {
+  .hamburger {
+    display: block;
+  }
   .speedEffect {
     display: none;
   }
   .loadAnim {
     display: none;
   }
-  header {
+  header.nav-down {
     display: none;
   }
   .cd-headline img {
@@ -522,9 +525,6 @@ input[type="text"]::-ms-clear {
   }
   section.myskills h1 {
     font-size: 40px;
-  }
-  section.myskills p {
-    margin-top: 0px;
   }
   section.cv h1 {
     font-size: 40px;

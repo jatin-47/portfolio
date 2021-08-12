@@ -42,8 +42,27 @@
   </head>
 
   <body onkeydown="getKeyAndMove(event)">
+    <!-- sidenav -->
+    <div class="cover" onclick="toggleSidenav();"></div>
+    <div class="hamburger" id="hamburger" onclick="toggleSidenav();">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav>
+      <div class="links">
+        <a class="smooth" href="#me" onclick="toggleSidenav();">about</a>
+        <a class="smooth" href="#cv" onclick="toggleSidenav();">resume</a>
+        <a class="smooth" href="#projects" onclick="toggleSidenav();">projects</a>
+        <a class="smooth" href="#myskills" onclick="toggleSidenav();">skills</a>
+        <a class="smooth" href="#artworks" onclick="toggleSidenav();">artworks</a>
+        <a class="smooth" href="#coffeewithme" onclick="toggleSidenav();">coffee with me</a>
+      </div>
+    </nav>
+
     <!-- header -->
-    <header class="nav-down reachedTop">
+    <header class="nav-down">
       <div class="wrapper" id="navbar">
         <div class="row">
           <div class="small-12 large-12 columns alignCenter">
@@ -138,26 +157,7 @@
         </div>
       </div>
     </section>
-    <!--   <section class="numbers-wrapper">
-      <section class="numbers-inner-wrapper">
-        <div class="numbers">
-          <h4 id="coded-lines">160 000</h4>
-          <span>lines of code</span>
-        </div>
-        <div class="numbers">
-          <h4 id="rendered-pixels">301 783 509</h4>
-          <span>pixels rendered</span>
-        </div>
-        <div class="numbers">
-          <h4 id="coffee-cups">1512</h4>
-          <span>cups of coffee drunk</span>
-        </div>
-        <div class="numbers">
-          <h4 id="projects-completed">26</h4>
-          <span>projects completed</span>
-        </div>
-      </section>
-    </section> -->
+
     <section class="projects" id="projects">
       <div class="row alignCenter">
         <h1>Projects.</h1>
@@ -229,20 +229,34 @@
       <div class="row alignCenter">
         <h1>Skills.</h1>
         <div class="skills">
+          <p>Programming Languages</p>
           <ul>
             <li><img class="icons" src="https://img.icons8.com/color/144/000000/c-plus-plus-logo.png" /> <br />C/C++</li>
             <li><img class="icons" src="https://img.icons8.com/color/144/000000/python--v1.png" /><br />Python</li>
             <li><img class="icons" src="https://img.icons8.com/color/144/000000/javascript--v1.png" /><br />JavaScript</li>
             <li><img class="icons" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" /><br />HTML</li>
             <li><img class="icons" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" /><br />CSS</li>
-            <li><img class="icons" src="https://img.icons8.com/color/144/000000/react-native.png" /><br />React</li>
+          </ul>
+          <p>Web Technologies</p>
+          <ul>
             <li><img class="icons" src="https://img.icons8.com/color/144/000000/mongodb.png" /><br />MongoDB</li>
-            <li><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" /><br />Node.js</li>
             <li><img class="icons" src="img/skills/expressjs.svg" /><br />Express.js</li>
+            <li><img class="icons" src="https://img.icons8.com/color/144/000000/react-native.png" /><br />React</li>
+            <li><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" /><br />Node.js</li>
+          </ul>
+          <ul>
             <li><img class="icons" src="img/skills/flask.svg" /><br />Flask</li>
             <li><img class="icons" src="https://img.icons8.com/color/144/000000/django.png" /><br />Django</li>
+          </ul>
+          <p>Machine Learning</p>
+          <ul>
             <li><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" /><br />scikit-learn</li>
             <li><img class="icons" src="https://img.icons8.com/color/144/000000/tensorflow.png" /><br />TensorFlow</li>
+          </ul>
+          <p>Modelling / CAD Softwares</p>
+          <ul>
+            <li><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" /><br />MATLAB/SIMULINK</li>
+            <li><img class="icons" src="img/skills/sw.png" /><br />SolidWorks</li>
           </ul>
         </div>
       </div>
