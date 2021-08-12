@@ -530,9 +530,13 @@ input[type="text"]::-ms-clear {
     font-size: 30px;
     margin-top: 30px;
   }
+  .artwork {
+    max-width: 85% !important;
+    height: auto !important;
+  }
 
   section.quotes h2 {
-    font-size: 12px;
+    font-size: 17px;
     margin-top: 20px;
   }
   section.quotes p {

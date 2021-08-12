@@ -383,7 +383,7 @@ section.projects h1 {
   color: #fff;
   font-family: "ProximaNovaT";
   font-size: 50px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 section.projects p {
   color: #fff;
@@ -431,8 +431,8 @@ a.email:visited {
 section.quotes {
   /*background:#ffc548;*/
   background: #e55c4c;
-  border-left: 20px solid white;
-  border-right: 20px solid white;
+  /*   border-left: 20px solid white;
+  border-right: 20px solid white; */
   border-bottom: 20px solid white;
   border-top: 20px solid white;
 }
@@ -446,7 +446,7 @@ section.quotes h2 {
   color: #fff;
   font-family: serif;
   font-style: italic;
-  font-size: 32px;
+  font-size: 25px;
   margin-top: 40px;
 }
 section.quotes p {
@@ -457,11 +457,10 @@ section.quotes p {
   margin-bottom: 20px;
   font-size: 21px;
 }
-.quotes_img {
-  width: 150px !important;
+.artwork {
+  height: 450px !important;
+  width: auto !important;
   margin-top: 10px !important;
-  margin-bottom: 10px !important;
-  border-radius: 50%;
   border-style: none;
   border: 0px solid !important;
 }
@@ -490,16 +489,16 @@ section.coffeewithme p {
 section.myskills {
   /*background:#ffc548;*/
   background: #fff;
-  border-left: 20px solid white;
-  border-right: 20px solid white;
-  border-bottom: 20px solid white;
-  border-top: 20px solid white;
+  /*   border-left: 20px solid white;
+  border-right: 20px solid white; */
+  /*   border-bottom: 20px solid white;
+  border-top: 20px solid white; */
 }
 section.myskills h1 {
   color: #3a3a3a;
   font-family: "ProximaNovaT";
   font-size: 55px;
-  margin-top: 0px;
+  margin-top: 40px;
 }
 section.myskills p {
   text-align: center;
@@ -521,7 +520,7 @@ section.myskills p {
 }
 section.projects {
   background: #303030;
-  border: 20px solid white;
+  /* border: 20px solid white; */
 }
 section.projects h2.name {
   font-size: 30px;
@@ -701,10 +700,10 @@ hr {
     width: 30px !important;
   }
   .cbp-fwslider nav span.cbp-fwnext {
-    right: 20px !important;
+    right: 10px !important;
   }
   .cbp-fwslider nav span.cbp-fwprev {
-    left: 20px !important;
+    left: 10px !important;
   }
   section.sayhello h1 {
     font-size: 50px;
