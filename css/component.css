@@ -526,18 +526,61 @@ input[type="text"]::-ms-clear {
   section.myskills h1 {
     font-size: 40px;
   }
+  section.myskills p {
+    font-size: 26px;
+  }
   section.cv h1 {
     font-size: 40px;
   }
   section.cv p {
     margin-top: 20px;
   }
-  section.quotes {
+
+  /* timeline */
+  .timeline-center {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .timeline-item {
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+  }
+  .timeline-item:nth-child(even) {
+    margin-right: 1.4rem;
+  }
+  .timeline-item:nth-child(odd) {
+    margin-left: 1.4rem;
+  }
+  .timeline h4 {
+    font-size: 25px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .timeline img {
+    width: 55px;
+    display: none;
+  }
+  .timeline-item:nth-child(even) img {
+    right: -50px;
+  }
+  .timeline-item:nth-child(odd) img {
+    left: -50px;
+  }
+  .yr {
+    top: 30%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 11px;
+  }
+  /*//////////////////////// */
+  section.quotes,
+  section.timeline {
     border: 0px;
   }
 
-  section.quotes h1 {
-    font-size: 30px;
+  section.quotes h1,
+  section.timeline h1 {
+    font-size: 40px;
     margin-top: 30px;
   }
   .artwork {
@@ -550,14 +593,20 @@ input[type="text"]::-ms-clear {
     height: auto !important;
   }
   .icons {
-    width: 75px;
+    width: 65px;
   }
 
-  section.quotes h2 {
+  .skills li {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  section.quotes h2,
+  section.timeline h2 {
     font-size: 17px;
     margin-top: 20px;
   }
-  section.quotes p {
+  section.quotes p,
+  section.timeline p {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
