@@ -32,7 +32,7 @@ new stepsForm(theForm, {
 function changeImage() {
   $(".downloadCV").html("<p>Download my Resume</p><img onclick='changeImage()' src='img/dwnld.gif'>");
   setTimeout(() => {
-    window.open("https://docs.google.com/document/d/101Yk0bawQjFysSZzd1p2KIjoekAkEeYHqOQPeuj65DY/edit?usp=sharing", "_blank");
+    window.open("https://docs.google.com/document/d/1O7vp4hyzCmiebOcTUIUVhaCQRPrrhpo8NM6SY8Be6Nw/edit?usp=sharing", "_blank");
   }, 2000);
 
   $(".resume").addClass("downloaded");
