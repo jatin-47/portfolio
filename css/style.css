@@ -280,6 +280,8 @@ a.logo span {
 }
 ul.menu {
   margin-top: 20px;
+  width: max-content;
+  margin-left: -3.5rem;
 }
 ul.menu li {
   list-style: none;
@@ -482,9 +484,20 @@ a.email:visited {
 }
 section.quotes {
   background: #e55c4c;
-  border-bottom: 20px solid white;
+  padding-bottom: 10px;
 }
 section.quotes h1 {
+  color: #fff;
+  font-family: "ProximaNovaT";
+  font-size: 55px;
+  margin-top: 40px;
+}
+
+section.music {
+  background: #1db954;
+  border-bottom: 20px solid white;
+}
+section.music h1 {
   color: #fff;
   font-family: "ProximaNovaT";
   font-size: 55px;
@@ -600,13 +613,18 @@ section.quotes h2 {
   font-size: 25px;
   margin-top: 40px;
 }
-section.quotes p {
+section.music p {
   text-align: center;
   color: #f2f2f2;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 21px;
+}
+
+iframe {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .artwork {
   height: 450px !important;
@@ -615,6 +633,7 @@ section.quotes p {
   border-style: none;
   border: 0px solid !important;
 }
+
 .project_page {
   height: 400px !important;
   width: auto !important;
